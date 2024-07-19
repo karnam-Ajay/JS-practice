@@ -35,5 +35,5 @@ const replStrurl = 'https://you-tube.com';
 const spltStr = 'karnam-ajay';
 
 //console.log(spltStr.split('-')) 
-// converts string to array based condition we give, here i gave based on "-".
+// converts string to array based on condition we give, here i gave based on "-".
 
