@@ -28,13 +28,13 @@ let newArray = myarr.join();
 console.log(myarr);
 
 let sliceArr = myarr.slice(1,4);
-console.log("slice Arr: ",sliceArr);  
-console.log("org arr:",myarr);
+// console.log("slice Arr: ",sliceArr);  
+// console.log("org arr:",myarr);
 // returns part of the array, will not include the end index. not effect org array
 
 let spliceArr = myarr.splice(1,4);
-console.log("splice Arr: ", spliceArr);
-console.log("org arr:",myarr);
+// console.log("splice Arr: ", spliceArr);
+// console.log("org arr:",myarr);
 
 // returns part of the array, will include the end index. 
 // removes the specified elements from original array.
