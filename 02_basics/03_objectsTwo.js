@@ -50,3 +50,17 @@ const valuesArr = Object.values(instaUser);
 
 // console.log(instaUser.hasOwnProperty('isLoggedIn'));
 // to check whether property exists in obj.
+
+//+++++ Objects destructuring ++++++//
+
+const myCourse = {
+    courseName:"JavaScript",
+    teacher:"hitesh",
+    courseId:"1232344"
+}
+
+const {courseName,teacher} = myCourse;
+// like above we can use object destructuring.
+
+console.log(courseName);
+console.log(teacher);
