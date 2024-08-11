@@ -43,4 +43,14 @@ arrObj.forEach(
         // Neeraj plays Javelin
         // Sunit plays football
     }
-)
+);
+
+// forEach will not return anything.
+
+let result = arrObj.forEach(
+    (item)=>{
+        //console.log(item);
+        return item;
+    }
+);
+//console.log(result); // undefined.
