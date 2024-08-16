@@ -2,7 +2,7 @@
 
 // print odd numbers till 20.
 let index = 1;
-while (index <= 20) {
+while (index < 20) {
    // console.log(`the value of index is ${index}`);
     index = index + 2;
 }
