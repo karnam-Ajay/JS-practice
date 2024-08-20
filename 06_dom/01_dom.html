@@ -2,11 +2,45 @@
 <html lang="en">
 <head>
     <title>DOM learning</title>
+    <style>
+    .bg-black{
+        background-color: #212121;
+        color: #fff;
+    }</style>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class="heading">DOM learning from youtube</h1>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM learning from youtube<span style="display:none">span element</span>
+        </h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
     </div>
     <p>Lorem ipsum dolor sit amet.</p>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
 </body>
 </html>
+
+<!-- document.getElementById('title').innerText : it will give us the content which is only showing on screen.
+
+document.getElementById('title').textContent :it will give us all the content which is hiding by any other css classes.
+
+document.getElementById('title').innerHTML : it will also give if any HTML tag is there inside the content. -->
+
+
+<!-- document.querySelector('h2'): it will SELECT FIRST h2 tag in html doc.
+document.querySelector('.heading'): to select with class.
+document.querySelector('#title'): to select with id. -->
+
+<!-- document.querySelectorAll('li') : it will select all the list tags.
+
+const myLilist = document.querySelectorAll('li') : we can select like this in a variable
+
+myLilist[0].style.color = 'green' : we can change first li color like this -->
+
+<!-- 
+querySelector : it will select and return first element in html page
+querySelectorAll : it will select all tags and return the NodeList in array format. -->
