@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM ADD OR REMOVE Tags</title>
+</head>
+<body  style="background-color: #212121; color: white;">
+    <div class="parent" >
+        <div class="days">Monday</div>
+        <div class="days">Tuesday</div>
+        <div class="days">Wednesday</div>
+        <div class="days">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
+
+    // for(let i=0; i< parent.children.length;i++){
+    //     console.log(parent.children[i].innerHTML);
+    // }
+
+    parent.children[1].style.color = 'red';
+    // console.log(parent.firstElementChild);   // to get first element of parent
+    // console.log(parent.lastElementChild); // to get last element of parent
+    
+   const dayOne = document.querySelector('.days');
+   console.log(dayOne);
+   console.log(dayOne.parentElement);  // to get parent element from child element.
+   console.log(dayOne.nextElementSibling); // to get next element of first.
+
+   console.log('Nodes:',parent.childNodes);
+
+   // ***above console gives 9 child nodes because browser will take count of newline as a text tag.
+   
+   
+</script>
+</html>
