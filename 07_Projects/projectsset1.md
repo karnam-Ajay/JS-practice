@@ -2,7 +2,7 @@
 
 # Project Link
 [Cilck here](
-https://stackblitz.com/edit/dom-project-chaiaurcode-ol7oky?file=1-colorChanger%2Findex.html)
+https://stackblitz.com/edit/dom-project-chaiaurcode-eznjnc?file=3-DigitalClock%2Fchaiaurcode.js)
 
 # solution code
   
