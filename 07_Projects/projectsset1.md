@@ -2,7 +2,7 @@
 
 # Project Link
 [Cilck here](
-https://stackblitz.com/edit/dom-project-chaiaurcode-eznjnc?file=3-DigitalClock%2Fchaiaurcode.js)
+https://stackblitz.com/edit/dom-project-chaiaurcode-gjsq3x)
 
 # solution code
   
