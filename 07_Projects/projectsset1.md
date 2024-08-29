@@ -74,7 +74,7 @@ setInterval(function () {
 }, 1000);
 ```
 
-## project solution code 3
+## project solution code 4
 
 
 ```javascript
