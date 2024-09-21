@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141;">
+    <h1>Image Gallery</h1>
+    <ul id="images">
+        <li class="img1" ><img width:50px id="image1" src="https://images.freeimages.com/images/large-previews/514/google-earth-1180424.jpg?fmt=webp&w=500" alt="Image 1"></li>
+        <li ><img id="image2" width:50px src="https://images.freeimages.com/images/large-previews/97f/calendar-series-4-1192550.jpg?fmt=webp&w=500" alt="Image 2"></li>
+        <li><img id="image3" width:50px src="https://images.freeimages.com/images/large-previews/8e6/mignifiers-1417830.jpg?fmt=webp&w=500" alt="Image 3"></li>
+        <li><img id="image4" width:50px src="https://images.freeimages.com/images/large-previews/12a/google-1559998.jpg?fmt=webp&w=500" alt="Image 4"></li>
+        <li><img id="image5" width:50px src="https://images.freeimages.com/images/large-previews/2f2/calendar-series-2-1192572.jpg?fmt=webp&w=500" alt="Image 5"></li>
+        <li><a style="color:white" href="https://www.youtube.com/" id="youtube">youtube link</a></li>
+    </ul>
+</body>
+<script>
+    // below way will not give more features
+
+    // document.getElementById('image1').onclick() = function(){
+    //     alert('image1 clicked');
+    // }
+
+        // major events topics to learn
+    // type, timeStamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altKey, shiftKey, ctrlKey, keyCode
+
+    // event propagation: third parameter in while using addEventListner which is boolean (by default false)
+    // types
+    // 1. bubling --> control goes from child to parent
+    // 2. capturing --> control goes from parent to child
+
+// this way will give more features
+    // const id1 = document.getElementById('images').addEventListener('click',
+    //     function(event){
+    //         console.log('cliked on images');
+    //     }
+    // );
+
+    // const id2 = document.getElementById('image1').addEventListener('click',
+    //     function(event){
+    //         console.log('clicked on 1st image');
+    //         event.stopPropagation() // to stop bubling
+    //     }
+    // );
+
+    // document.getElementById('youtube').addEventListener('click',
+    //     function(e){
+    //         e.preventDefault() // to prevent default behaviour
+    //         e.stopPropagation() // to stop bubling
+    //         console.log('clicked on youtube')
+    //     }
+    // );
+
+
+    // project to remove an image when we clicked on it.
+
+    document.querySelector('#images').addEventListener('click',
+        function(e){
+            // when we clicked on image only it should be removed not li
+            // below console gives us tagName which we clicked
+            console.log(e.target.tagName)
+            if(e.target.tagName === 'IMG'){
+                console.log(e.target.id);
+                let removeImg = e.target.parentNode;
+                removeImg.remove();
+            }
+            
+        }
+    )
+
+</script>
+</html>
