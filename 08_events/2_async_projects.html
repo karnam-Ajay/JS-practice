@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Project on Async</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+        const testAsync = function () {
+            console.log('hello welcome to async code')
+        };
+
+        let test2 = function () {
+            document.querySelector('h1').innerHTML = 'JS by Hitesh';
+        }
+     const res = setTimeout(test2, 2000);
+
+     document.querySelector('#stop')
+        .addEventListener('click',function(){
+            clearTimeout(res);
+            console.log('stopped on click');
+        });
+
+</script>
+</html>

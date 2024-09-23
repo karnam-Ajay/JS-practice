@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Project</title>
+</head>
+<body>
+    <h1>Project to change the background color on click of start and stop on click of stop</h1>
+    <button style="margin-left:100px; cursor: pointer;" id="start">Start</button>
+    <button style="margin-left:100px; cursor: pointer" id="stop">Stop</button>
+</body>
+<script>
+    const randomClr = function(){
+        const hex = '0123456789ABCDEF';
+        let color = '#'
+        for(let i = 0; i<6;i++){
+            color += hex[ Math.floor(Math.random() * 16)]
+        }
+        return color;
+    }
+   //console.log(randomClr());
+
+  let startIntervalId;
+
+const startChangingColor = function () {
+    if(!startIntervalId){
+        startIntervalId = setInterval(changeBgclr, 1000)
+    }
+        function changeBgclr () {
+            document.body.style.backgroundColor = randomClr();
+        }
+    }
+
+  const stopChangingColor = function() {
+        clearInterval(startIntervalId);
+        startIntervalId = null;
+    }
+
+   document.querySelector('#start')
+   .addEventListener('click',
+    startChangingColor
+   )
+    
+   document.querySelector('#stop')
+   .addEventListener('click',
+    stopChangingColor
+   )
+</script>
+</html>
